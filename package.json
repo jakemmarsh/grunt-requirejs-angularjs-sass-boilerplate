@@ -1,0 +1,34 @@
+{
+    "name": "grunt-requirejs-angularjs-boilerplate",
+    "version": "0.1.0",
+    "author": "Jake Marsh <jakemmarsh@gmail.com>",
+    "description": "a boilerplate for getting started quickly with Grunt, RequireJS, and AngularJS.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jakemmarsh/grunt-requirejs-angularjs-boilerplate.git"
+    },
+    "keywords": [
+        "grunt",
+        "angular",
+        "angularjs",
+        "requirejs",
+        "boilerplate"
+    ],
+    "engines": {
+        "node": ">=0.10.x"
+    },
+    "dependencies": {
+        "express": ">=3.x"
+    },
+    "devDependencies" : {
+        "grunt" : ">=0.4.x",
+        "grunt-contrib-watch" : "<=0.6.x",
+        "grunt-contrib-sass" : ">=0.7.x",
+        "grunt-contrib-requirejs" : ">=0.4.x",
+        "grunt-contrib-imagemin" : ">=0.5.x",
+        "grunt-angular-templates" : ">=0.5.x"
+    },
+    "scripts": {
+        "start": "node server"
+    }
+}

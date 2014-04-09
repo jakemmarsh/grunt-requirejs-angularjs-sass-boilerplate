@@ -1,0 +1,290 @@
+.island {
+    padding: $full-space;
+}
+
+.islet {
+    padding: $half-space;
+}
+
+.soft {
+    padding: $full-space;
+}
+
+.soft--top {
+    padding-top: $full-space;
+}
+
+.soft--bottom {
+    padding-bottom: $full-space;
+}
+
+.soft--left {
+    padding-left: $full-space;
+}
+
+.soft--right {
+    padding-right: $full-space;
+}
+
+.soft--ends {
+    padding-top: $full-space;
+    padding-bottom: $full-space;
+}
+
+.soft--sides {
+    padding-left: $full-space;
+    padding-right: $full-space;
+}
+
+.soft-half {
+    padding: $half-space;
+}
+
+.soft-half--top {
+    padding-top: $half-space;
+}
+
+.soft-half--bottom {
+    padding-bottom: $half-space;
+}
+
+.soft-half--left {
+    padding-left: $half-space;
+}
+
+.soft-half--right {
+    padding-right: $half-space;
+}
+
+.soft-half--ends {
+    padding-top: $half-space;
+    padding-bottom: $half-space;
+}
+
+.soft-half--sides {
+    padding-left: $half-space;
+    padding-right: $half-space;
+}
+
+.soft-quarter {
+    padding: $half-space/2;
+}
+
+.soft-quarter--top {
+    padding-top: $half-space/2;
+}
+
+.soft-quarter--bottom {
+    padding-bottom: $half-space/2;
+}
+
+.soft-quarter--left {
+    padding-left: $half-space/2;
+}
+
+.soft-quarter--right {
+    padding-right: $half-space/2;
+}
+
+.soft-quarter--ends {
+    padding-top: $half-space/2;
+    padding-bottom: $half-space/2;
+}
+
+.soft-quarter--sides {
+    padding-left: $half-space/2;
+    padding-right: $half-space/2;
+}
+
+.hard {
+    padding: 0 !important;
+}
+
+.hard--top {
+    padding-top: 0 !important;
+}
+
+.hard--bottom {
+    padding-bottom: 0 !important;
+}
+
+.hard--left {
+    padding-left: 0 !important;
+}
+
+.hard--right {
+    padding-right: 0 !important;
+}
+
+.hard--ends {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.hard--sides {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.nudge {
+    margin: $full-space;
+}
+
+.nudge--top {
+    margin-top: $full-space;
+}
+
+.nudge--bottom {
+    margin-bottom: $full-space;
+}
+
+.nudge--left {
+    margin-left: $full-space;
+}
+
+.nudge--right {
+    margin-right: $full-space;
+}
+
+.nudge--ends {
+    margin-top: $full-space;
+    margin-bottom: $full-space;
+}
+
+.nudge--sides {
+    margin-left: $full-space;
+    margin-right: $full-space;
+}
+
+.nudge-half {
+    margin: $half-space;
+}
+
+.nudge-half--top {
+    margin-top: $half-space;
+}
+
+.nudge-half--bottom {
+    margin-bottom: $half-space;
+}
+
+.nudge-half--left {
+    margin-left: $half-space;
+}
+
+.nudge-half--right {
+    margin-right: $half-space;
+}
+
+.nudge-half--ends {
+    margin-top: $half-space;
+    margin-bottom: $half-space;
+}
+
+.nudge-half--sides {
+    margin-left: $half-space;
+    margin-right: $half-space;
+}
+
+.nudge-quarter {
+    margin: $half-space/2;
+}
+
+.nudge-quarter--top {
+    margin-top: $half-space/2;
+}
+
+.nudge-quarter--bottom {
+    margin-bottom: $half-space/2;
+}
+
+.nudge-quarter--left {
+    margin-left: $half-space/2;
+}
+
+.nudge-quarter--right {
+    margin-right: $half-space/2;
+}
+
+.nudge-quarter--ends {
+    margin-top: $half-space/2;
+    margin-bottom: $half-space/2;
+}
+
+.nudge-quarter--sides {
+    margin-left: $half-space/2;
+    margin-right: $half-space/2;
+}
+
+.flush {
+    margin: 0 !important;
+}
+
+.flush--top {
+    margin-top: 0 !important;
+}
+
+.flush--bottom {
+    margin-bottom: 0 !important;
+}
+
+.flush--left {
+    margin-left: 0 !important;
+}
+
+.flush--right {
+    margin-right: 0 !important;
+}
+
+.flush--ends {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.flush--sides {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.vertical-align-middle {
+    vertical-align: middle;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right, .responsive-text-right {
+    text-align: right;
+}
+
+.text-left, .responsive-text-left {
+    text-align: left;
+}
+
+    @media only screen and (max-width: 480px) {
+        .responsive-text-left,
+        .responsive-text-right {
+            text-align: center;
+        }
+    }
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.table {
+    display: table;
+}
+
+.td {
+    display: table-cell;
+}
+
+.tr {
+    display: table-row;
+}

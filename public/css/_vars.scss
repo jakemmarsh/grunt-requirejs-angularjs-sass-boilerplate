@@ -1,0 +1,33 @@
+// COLORS
+$white: #fff !default;
+
+// SPACING
+$full-space: 20px !default;
+$half-space: 10px !default;
+
+
+// MIX-INS
+@mixin transition($transition-property: all, $transition-time: 0.2s, $method: ease-in-out) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+@mixin corners($top-left: 2px, $top-right: 2px, $bottom-right: 2px, $bottom-left: 2px) {
+  -moz-border-radius: $top-left $top-right $bottom-right $bottom-left;
+  -webkit-border-radius: $top-left $top-right $bottom-right $bottom-left;
+   border-radius: $top-left $top-right $bottom-right $bottom-left;
+}
+
+@mixin gradient($top-color, $bottom-color: $top-color) {
+	background: $top-color;
+	background: -moz-linear-gradient(top,  $top-color 0%, $bottom-color 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top-color), color-stop(100%,$bottom-color));
+	background: -webkit-linear-gradient(top,  $top-color 0%,$bottom-color 100%);
+	background: -o-linear-gradient(top,  $top-color 0%,$bottom-color 100%);
+	background: -ms-linear-gradient(top,  $top-color 0%,$bottom-color 100%);
+	background: linear-gradient(to bottom,  $top-color 0%,$bottom-color 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top-color', endColorstr='$bottom-color',GradientType=0 );
+}
