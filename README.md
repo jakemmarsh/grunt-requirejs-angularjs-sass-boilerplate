@@ -66,7 +66,7 @@ Although these can both be loaded with a separate HTTP call upon each page load,
 
 ###### Adding New AngularJS Modules
 
-If at any point you add additional AngularJS libraries or modules, these must first be added in `main.js` to make RequireJS aware (unles you refer to them specifically by their location path). From there, they must be injected into the application in `app.js` (either by the identifier declared in `main.js`, or their full path).
+If at any point you add additional AngularJS libraries or modules, these must first be added in `main.js` to make RequireJS aware (unless you refer to them specifically by their location path). From there, they must be injected into the application in `app.js` (either by the identifier declared in `main.js`, or their full path).
 
 ---
 
@@ -118,4 +118,4 @@ Most of the Grunt tasks, and how to run them, are described in the Grunt section
 
 ##### Server
 
-An incredibly simple NodeJS + Express server is included in this project. In order to run it and see your application, try the command `npm start` from the directory, or use a package like [Supervisor](https://github.com/isaacs/node-supervisor).
+An incredibly simple NodeJS + Express server is included in this project. In order to run it and see your application, try the command `npm start` from the directory, or use a package like [Supervisor](https://github.com/isaacs/node-supervisor). Using `npm start`, your application will be served to `localhost:3000`.
