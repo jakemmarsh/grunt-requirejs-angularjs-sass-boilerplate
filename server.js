@@ -5,11 +5,11 @@ var express        = require('express'),
     bodyParser     = require('body-parser'),
     app            = express();
 
-app.use(morgan('dev'));
-app.use(compression());
-app.use(methodOverride());
-app.use(bodyParser());
-app.set('json spaces', 0);
+app.use(morgan('dev'));     // logs all requests to the console
+app.use(compression());     // compresses response data with gzip/deflate
+app.use(methodOverride());  // simulates DELETE and PUT
+app.use(bodyParser());      // pulls req.body from html POST
+app.set('json spaces', 0);  // remove superfluous spaces from JSON responses
 
 // Add headers
 app.use(function (req, res, next) {
