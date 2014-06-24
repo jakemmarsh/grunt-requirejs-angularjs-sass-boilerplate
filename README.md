@@ -119,4 +119,4 @@ Most of the Grunt tasks, and how to run them, are described in the Grunt section
 
 ##### Server
 
-An incredibly simple NodeJS + Express server is included in this project. In order to run it and see your application, try the command `npm start` from the directory, or use a package like [Supervisor](https://github.com/isaacs/node-supervisor). Using `npm start`, your application will be served to `localhost:3000`.
+An incredibly simple NodeJS + Express server is included in this project. An alias is provided so that using the command `npm start` from the command line while in the directory will automatically serve the project to `localhost:8000` via [Supervisor](https://github.com/isaacs/node-supervisor).
