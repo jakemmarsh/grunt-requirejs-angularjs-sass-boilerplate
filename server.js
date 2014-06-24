@@ -8,7 +8,10 @@ var express        = require('express'),
 app.use(morgan('dev'));     // logs all requests to the console
 app.use(compression());     // compresses response data with gzip/deflate
 app.use(methodOverride());  // simulates DELETE and PUT
-app.use(bodyParser());      // pulls req.body from html POST
+app.use(bodyParser.json()); // parses req.body json from html POST
+app.use(bodyParser.urlencoded({
+    extended: true
+}));                        // parses urlencoded req.body, including extended syntax
 app.set('json spaces', 0);  // remove superfluous spaces from JSON responses
 
 // Add headers
