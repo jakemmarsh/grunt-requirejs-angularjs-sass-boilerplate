@@ -5,23 +5,23 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         watch: {
             templates: {
-                files: ['./public/partials/**/*.html', './public/templates/**/*.html'],
+                files: ['./app/partials/**/*.html', './app/templates/**/*.html'],
                 tasks: ['ngtemplates']
             },
             scripts: {
-                files: ['./public/js/**/*.js', '!./public/js/main.min.js'],
+                files: ['./app/js/**/*.js', '!./app/js/main.min.js'],
                 tasks: ['requirejs']
             },
             styles: {
-                files: ['./public/css/**/*.scss'],
+                files: ['./app/css/**/*.scss'],
                 tasks: ['sass']
             }
         },
         ngtemplates: {
             app: {
-                cwd: './public',
+                cwd: './app',
                 src: ['partials/**/*.html', 'templates/**/*.html'],
-                dest: './public/js/templates.js',
+                dest: './app/js/templates.js',
                 options: {
                     bootstrap:  function(module, script) {
                         return 'define([\'angular\', \'app\'], function(angular, app) { app.run([\'$templateCache\', function($templateCache) {' + script + '}]); });';
@@ -42,10 +42,10 @@ module.exports = function(grunt) {
         requirejs: {
             compile: {
                 options: {
-                    mainConfigFile: "./public/js/main.js",
+                    mainConfigFile: "./app/js/main.js",
                     optimize: "uglify",
                     name: "main",
-                    out: "./public/js/main.min.js",
+                    out: "./app/js/main.min.js",
                     preserveLicenseComments: false
                 }
             }
@@ -55,8 +55,8 @@ module.exports = function(grunt) {
                 style: 'compressed'
             },
             prod: {
-                src: './public/css/style.scss',
-                dest: './public/css/style.min.css'
+                src: './app/css/style.scss',
+                dest: './app/css/style.min.css'
             }
         },
         imagemin: {
@@ -67,7 +67,7 @@ module.exports = function(grunt) {
                 },
                 files: [{
                     expand: true,
-                    src: ['./public/img/**/*.{png,jpg,gif}'],
+                    src: ['./app/img/**/*.{png,jpg,gif}'],
                     dest: '.'
                 }]
             }

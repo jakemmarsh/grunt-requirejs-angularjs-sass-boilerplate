@@ -6,11 +6,10 @@
 require.config({
 
     paths: {
-        'lib': './lib',
-        'domReady': './lib/requirejs/domReady',
-        'angular': './lib/angular/angular.min',
-        'angular-sanitize' : './lib/angular/angular-sanitize.min',
-        'angular-ui-router' : './lib/angular/angular-ui-router.min'
+        'domReady': '../bower_components/requirejs-domready/domReady',
+        'angular': '../bower_components/angular/angular.min',
+        'angular-sanitize' : '../bower_components/angular-sanitize/angular-sanitize.min',
+        'angular-ui-router' : '../bower_components/angular-ui-router/release/angular-ui-router.min'
     },
 
     shim: {
