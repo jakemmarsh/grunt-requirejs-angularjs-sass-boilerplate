@@ -108,6 +108,7 @@ Before being able to run any of the relevant processes, take the following steps
 
 1. Clone this repo from `https://github.com/jakemmarsh/grunt-requirejs-angularjs-boilerplate.git`
 2. Run `npm install` from the directory
+3. Run `bower install`
 
 ##### Grunt
 

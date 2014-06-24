@@ -1,0 +1,15 @@
+{
+    "name": "grunt-requirejs-angularjs-boilerplate",
+    "description": "a boilerplate for getting started quickly with Grunt, RequireJS, and AngularJS.",
+    "version": "0.3.0",
+    "homepage": "https://github.com/jakemmarsh/grunt-requirejs-angularjs-boilerplate",
+    "private": false,
+    "dependencies": {
+        "angular": "1.2.x",
+        "angular-ui-router": "0.2.x",
+        "angular-sanitize": "1.2.x",
+        "angular-mocks": "~1.2.x",
+        "requirejs": null,
+        "requirejs-domready": null
+    }
+}

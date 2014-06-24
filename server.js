@@ -31,17 +31,14 @@ app.use(function (req, res, next) {
 });
 
 // serve all asset files from necessary directories
-app.use("/js", express.static(__dirname + "/public/js"));
-app.use("/img", express.static(__dirname + "/public/img"));
-app.use("/css", express.static(__dirname + "/public/css"));
-app.use("/partials", express.static(__dirname + "/public/partials"));
-app.use("/templates", express.static(__dirname + "/public/templates"));
+app.use("/bower_components", express.static(__dirname + "/bower_components"));
+app.use(express.static(__dirname + '/app'));
 
 // any API endpoints go here, declared before 'app.all'
 
 // serve index.html for all remaining routes, in order to leave routing up to angular
 app.all("/*", function(req, res, next) {
-    res.sendfile("index.html", { root: __dirname + "/public" });
+    res.sendfile("index.html", { root: __dirname + "/app" });
 });
 
 app.listen(process.env.PORT || 3000);
