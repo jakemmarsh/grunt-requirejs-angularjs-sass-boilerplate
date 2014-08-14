@@ -1,11 +1,7 @@
 grunt-requirejs-angularjs-SASS-boilerplate
 =====================================
 
-**Note: I highly recommend using my [angularjs-gulp-browserify-boilerplate](https://github.com/jakemmarsh/angularjs-gulp-browserify-boilerplate) in place of this one.**
-
----
-
-A boilerplate for Grunt, RequireJS, AngualrJS, and SASS.
+**Note: I highly recommend using my newer [angularjs-gulp-browserify-boilerplate](https://github.com/jakemmarsh/angularjs-gulp-browserify-boilerplate) in place of this one.**
 
 ---
 
